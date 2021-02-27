@@ -18,7 +18,9 @@ export default function Phase2() {
   function generateZip() {
     var zip = new JSZip();
     zip.file("index.php", indexphp);
-    zip.file("Hello.txt", "Hello World\n");
+    //folder name
+    var folder1 = zip.folder("libraries");
+    folder1.file("Hello.txt", "Hello World\n");
     zip.generateAsync({type:"blob"})
     .then((content) => {
     saveAs(content, "example.zip");
