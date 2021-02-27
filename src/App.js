@@ -1,9 +1,10 @@
-import Zippys from "./components/zippys";
+//import Zippys from "./components/zippys";
+import Phase2 from "./components/phase2";
 
 function App() {
   return (
     <div>
-      <Zippys/>
+      <Phase2/>
     </div>
   );
 }

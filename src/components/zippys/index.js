@@ -11,7 +11,7 @@ function Zippys() {
     zip.generateAsync({type:"blob"})
     .then((content) => {
     saveAs(content, "example.zip");
-});
+    });
   }
   return (
     <div className={style.zippysContainer}>
