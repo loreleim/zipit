@@ -1,7 +1,9 @@
+import Zippys from "./components/zippys";
+
 function App() {
   return (
     <div>
-      <h1>Zip It!</h1>
+      <Zippys/>
     </div>
   );
 }
